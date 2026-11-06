@@ -1,0 +1,628 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Comida Mexicana Alondra | Tecomán, Colima</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#fdba45",
+            "surface-container-highest": "#e6e2dc",
+            "primary": "#932c0b",
+            "on-primary-fixed-variant": "#862202",
+            "inverse-primary": "#ffb5a0",
+            "on-primary-container": "#ffe2da",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#a1d2a8",
+            "on-secondary-container": "#6f4b00",
+            "surface": "#fdf9f3",
+            "tertiary": "#2d5938",
+            "primary-container": "#b44322",
+            "on-secondary-fixed": "#281900",
+            "secondary-container": "#fdba45",
+            "inverse-surface": "#31302d",
+            "tertiary-container": "#45724e",
+            "surface-container-high": "#ebe8e2",
+            "on-tertiary-container": "#c2f5c8",
+            "surface-variant": "#e6e2dc",
+            "secondary": "#7f5700",
+            "surface-container": "#f1ede7",
+            "outline": "#8b716a",
+            "tertiary-fixed": "#bcefc3",
+            "primary-fixed-dim": "#ffb5a0",
+            "surface-dim": "#dddad4",
+            "surface-tint": "#a73a19",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed": "#00210b",
+            "on-tertiary": "#ffffff",
+            "on-background": "#1c1c18",
+            "on-surface": "#1c1c18",
+            "error-container": "#ffdad6",
+            "on-primary-fixed": "#3b0900",
+            "on-surface-variant": "#58423c",
+            "on-secondary-fixed-variant": "#604100",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#23502f",
+            "inverse-on-surface": "#f4f0ea",
+            "outline-variant": "#dfc0b8",
+            "surface-bright": "#fdf9f3",
+            "on-secondary": "#ffffff",
+            "surface-container-low": "#f7f3ed",
+            "secondary-fixed": "#ffdeae",
+            "primary-fixed": "#ffdbd1",
+            "background": "#fdf9f3"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "2rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "0.75rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.25rem"
+          },
+          "fontFamily": {
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Epilogue"],
+            "headline-lg-mobile": ["Epilogue"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Epilogue"],
+            "display-lg-mobile": ["Epilogue"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Epilogue"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Epilogue"]
+          },
+          "fontSize": {
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @keyframes slowSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes reverseSpin {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+      50% { transform: translateY(-16px) rotate(15deg); opacity: 1; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 35px rgba(180, 67, 34, 0.15); }
+      50% { box-shadow: 0 0 55px rgba(253, 186, 69, 0.28); }
+    }
+    
+    .spin-slow {
+      animation: slowSpin 38s linear infinite;
+    }
+    .spin-reverse-slow {
+      animation: reverseSpin 50s linear infinite;
+    }
+    .floating-badge {
+      animation: floatParticle 4s ease-in-out infinite;
+    }
+    .floating-badge-delayed {
+      animation: floatParticle 4.5s ease-in-out infinite 1.5s;
+    }
+    .paused-spin {
+      animation-play-state: paused !important;
+    }
+    .clay-border {
+      box-shadow: 0 16px 36px -8px rgba(35, 27, 21, 0.08), 0 0 0 1px #dfc0b8;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md text-primary dark:text-inverse-primary docked full-width top-0 z-50 sticky shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-11 h-11 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-sm group-hover:scale-105 transition-transform duration-200">
+<span class="material-symbols-outlined text-2xl" data-icon="restaurant" data-weight="fill" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-primary dark:text-inverse-primary block leading-none">
+            Alondra Comida Mexicana
+          </span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest block uppercase pt-0.5">Tecomán, Colima</span>
+</div>
+</a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8"><a class="text-primary dark:text-inverse-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg transition-colors" href="#especialidades">Especialidades</a><a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="#galeria">Galería Culinaria</a><a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="#historia">Nuestra Historia</a><a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="#origen">Tradición de Tecomán</a></nav>
+<!-- Trailing Action Buttons -->
+<div class="flex items-center gap-3"><a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary transition-all duration-150 active:scale-95" href="#especialidades"><span class="material-symbols-outlined text-lg" data-icon="restaurant_menu">restaurant_menu</span><span class="">Explorar Platillos</span></a></div>
+</div>
+</header>
+<!-- Hero Section: Interactive 360° Rotating Plate with Motion Graphics -->
+<section class="relative pt-12 pb-24 lg:py-20 overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-surface">
+<!-- Atmospheric Ambient Vectors & Background Gradients -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-24 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-10 left-1/4 w-72 h-72 rounded-full bg-tertiary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Hero Text Editorial Lockup (7 cols on Desktop) -->
+<div class="lg:col-span-6 flex flex-col justify-center text-left">
+<!-- Location Badge -->
+<div class="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/50 text-secondary mb-6 shadow-xs">
+<span class="material-symbols-outlined text-base text-primary" data-icon="local_fire_department" data-weight="fill" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-md text-label-md font-semibold tracking-wide">Tradición &amp; Sazón Artesanal en Tecomán</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface font-bold tracking-tight mb-6 leading-tight">
+            El Auténtico Sazón Casero en el Corazón de <span class="text-primary italic">Tecomán</span>.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8 leading-relaxed">
+            Platillos preparados al instante con el calor de nuestra cocina hogareña, carnes sazonadas al fuego lento y guarniciones frescas del valle colimense. Servido con amor y tradición.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 mb-10">
+<a class="px-7 py-3.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all duration-200 active:scale-95 flex items-center gap-2.5" href="#especialidades">
+<span class="">Explorar Especialidades</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="px-6 py-3.5 rounded-xl bg-surface-container-high text-primary font-label-lg text-label-lg border border-outline-variant hover:bg-surface-container-highest transition-all duration-200 active:scale-95 flex items-center gap-2" href="#menu-completo"><span class="material-symbols-outlined text-lg" data-icon="photo_library">photo_library</span><span class="">Ver Galería Gastronómica</span></a>
+</div>
+<!-- Trust Signals -->
+<div class="pt-6 border-t border-outline-variant/40 flex items-center gap-6 sm:gap-10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-xl" data-icon="check_circle">check_circle</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface leading-none">100%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Carne &amp; Verdura Fresca</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-xl" data-icon="skillet">skillet</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface leading-none">Al Momento</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Receta Casera Familiar</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero 360° Interactive Rotating Plate Visual (6 cols on Desktop) -->
+<div class="lg:col-span-6 relative flex items-center justify-center">
+<!-- Outer Decorative Rings with Motion Graphics -->
+<div class="relative w-[340px] sm:w-[440px] md:w-[480px] h-[340px] sm:h-[440px] md:h-[480px] flex items-center justify-center">
+<!-- Concentric Dashed Ring 1 -->
+<div class="absolute inset-0 rounded-full border-2 border-dashed border-primary/25 spin-slow pointer-events-none"></div>
+<!-- Concentric Agave Ring 2 -->
+<div class="absolute inset-5 rounded-full border border-tertiary/20 spin-reverse-slow pointer-events-none"></div>
+<!-- Floating Cultural Badges Around the Plate -->
+<div class="floating-badge absolute -top-4 left-6 sm:left-12 z-20 bg-surface-container-lowest text-primary px-3.5 py-1.5 rounded-full shadow-md border border-outline-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="sparkles" data-weight="fill" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+<span class="font-label-sm text-label-sm font-bold">100% Sazón Colimense</span>
+</div>
+<div class="floating-badge-delayed absolute -bottom-3 right-4 sm:right-10 z-20 bg-surface-container-lowest text-tertiary px-3.5 py-1.5 rounded-full shadow-md border border-outline-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary" data-icon="eco" data-weight="fill" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-sm text-label-sm font-bold">Ingredientes del Valle</span>
+</div>
+<div class="floating-badge absolute top-1/2 -right-4 sm:-right-8 z-20 -translate-y-1/2 bg-primary-container text-on-primary px-3 py-1 rounded-full shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm">Tradición Hecha a Mano</span>
+</div>
+<!-- The Main Rotational Ceramic Clay Base Plate -->
+<div class="relative w-[280px] sm:w-[370px] md:w-[410px] h-[280px] sm:h-[370px] md:h-[410px] rounded-full p-3 sm:p-4 bg-gradient-to-br from-[#FAF6F0] via-[#F2E8DC] to-[#D5C0AB] clay-border transition-all duration-700 ease-out flex items-center justify-center group" id="main-plate-container">
+<!-- Ambient Clay Inner Rim -->
+<div class="w-full h-full rounded-full border-4 border-[#B44322]/20 overflow-hidden relative shadow-inner bg-surface-container">
+<!-- Rotating Plate Image Frame -->
+<img alt="Platillo Destacado Alondra" class="w-full h-full object-cover rounded-full spin-slow hover:pause transition-transform duration-500 scale-105" id="rotatable-hero-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA3RK7yU2mYqDEpsvzYchlofIp8AM_0IJnowLUTJcqHPaDtgGSwqEbLekP3QX3jt70Hp_OBuEn62ClFfGV01Xg5lqn0KUrlY3z_vZMriwvVYlxZEcKTn3Y3d6Ah4mJgzHJbBz9iM3RexWEuwevKqsz1M8WEyFA8MMQ5ltjec4wC8ukYmK6n8maZ-zlc8S-VcGy1f-WbcroOL-yJ4kKvW5O2EE_oK21iRjCmbfqtafz_detctp5JQ">
+<!-- Ambient Radial Light Overlay -->
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-black/15 via-transparent to-white/20 pointer-events-none"></div>
+</div>
+</div>
+</div>
+<!-- Micro-Interaction Plate Control Panel -->
+<div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-2 rounded-2xl shadow-lg border border-outline-variant flex items-center gap-2 z-30">
+<button class="p-2 rounded-xl bg-surface-container hover:bg-secondary-container/40 text-primary transition-colors flex items-center justify-center" id="toggle-spin-btn" title="Pausar o Girar">
+<span class="material-symbols-outlined text-xl" data-icon="pause" id="spin-icon">pause</span>
+</button>
+<div class="h-5 w-px bg-outline-variant/60"></div>
+<button class="hero-selector-btn px-2.5 py-1 rounded-lg text-xs font-label-md bg-primary-container text-on-primary transition-all font-semibold" data-index="1" onclick="setHeroPlate(1, 'https://lh3.googleusercontent.com/aida-public/AB6AXuBA3RK7yU2mYqDEpsvzYchlofIp8AM_0IJnowLUTJcqHPaDtgGSwqEbLekP3QX3jt70Hp_OBuEn62ClFfGV01Xg5lqn0KUrlY3z_vZMriwvVYlxZEcKTn3Y3d6Ah4mJgzHJbBz9iM3RexWEuwevKqsz1M8WEyFA8MMQ5ltjec4wC8ukYmK6n8maZ-zlc8S-VcGy1f-WbcroOL-yJ4kKvW5O2EE_oK21iRjCmbfqtafz_detctp5JQ', 'Chuleta Ahumada al Fuego Lento')">
+              Chuleta
+            </button>
+<button class="hero-selector-btn px-2.5 py-1 rounded-lg text-xs font-label-md text-on-surface-variant hover:bg-surface-container-high transition-all" data-index="2" onclick="setHeroPlate(2, 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMLSyWLeI3wxCMD0dVkIKOG6BirT4oHTSfmUPlFBqK2gTm35g2h5kOrDbWoUtO_WTKRVCiW4rDUNQooyhVGbtMryKdRm8emfVW7Ku2byetEr6H_zREKQz39soCZXhC6MzAf__DMkJo8R8VID3CfC9A-f6sslIlXmgTQVj4zyCPt68i994E4EFMbhqN53sAcVz2IP24B7CZgdaiNd7Bdo8fB1BYJqF_yKRNvxRoHTWA6IlTv3-mNw', 'Pechuga Asada &amp; Frijoles Refritos')">
+              Pechuga &amp; Frijol
+            </button>
+<button class="hero-selector-btn px-2.5 py-1 rounded-lg text-xs font-label-md text-on-surface-variant hover:bg-surface-container-high transition-all" data-index="3" onclick="setHeroPlate(3, 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEirBiSDpwUKwRTUf6KOqlbJtCBf1RTqwoIZIczVAw2g8aCtvb3WmgdQZ93ylMtLurShs6VkAVPoooIThoiwX2s0DOYl9GGQBnmKlgqHu4QFpkFWymxPQNYKUDED2w36HxM7DdSY-QvElAlrPJRPdc-Qx3fxPEl1loR3bx0WENCLgbG50p30k5u_r__4hTg0dzohA11u7bnjvBGxS86Vf7tWIPEvBk_BTOaKv7NMoVJmFPJL3z6A', 'Pechuga a la Plancha')">
+              Pico de Gallo
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Story & Brand Pillars (El Arte de Nuestro Sazón) -->
+<section class="py-16 bg-surface-container-low border-y border-outline-variant/30" id="historia">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">Identidad Culinaria</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">El Arte de Nuestro Sazón Familiar</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          En Alondra cocinamos cada día como si fuera una fiesta en casa: frijoles hechos desde la olla de barro, sazón auténtica y el respeto innegociable a la frescura de Tecomán.
+        </p>
+</div>
+<!-- Bento Grid of Culinary Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/50 shadow-sm hover:-translate-y-1.5 transition-transform duration-300">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="outdoor_grill">outdoor_grill</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">Fuego &amp; Carbón Lento</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Sellamos cada corte de carne y pechuga logrando jugosidad insuperable con un dorado crujiente y aroma inconfundible a leña tradicional.
+          </p>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center text-primary font-label-sm text-label-sm font-semibold">
+<span class="">Técnica 100% Artesanal</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/50 shadow-sm hover:-translate-y-1.5 transition-transform duration-300">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-tertiary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="nutrition">nutrition</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">Cosecha de Colima</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Zanahorias dulces, calabacitas tiernas de la huerta, chiles serranos picantes y plátano macho cosechado en tierras costeras tecomenses.
+          </p>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="">Apoyo a Productores Locales</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/50 shadow-sm hover:-translate-y-1.5 transition-transform duration-300">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="family_restroom">family_restroom</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">Hospitalidad Colimota</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Nuestras porciones son abundantes y generosas, acompañadas de arroz esponjoso con elote y frijoles con queso fresco de rancho.
+          </p>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center text-secondary font-label-sm text-label-sm font-semibold">
+<span class="">Servido con Cariño y Respeto</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu & Specialties Showcase (Using provided genuine photos) -->
+<section class="py-20 bg-surface" id="especialidades">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header with Category Filters -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Muestra del Día</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">Algunos de Nuestros Platillos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">Esta es solo una muestra de nuestros platillos preparados al momento. Cada día cocinamos más variedades caseras y opciones de temporada.</p>
+</div>
+<!-- Food Category Filter Pills -->
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-xs flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+            Todos los Platillos
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors">
+            Carnes &amp; Aves
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors">
+            Frutas &amp; Frescura
+          </button>
+</div>
+</div>
+<!-- Menu Grid: 4 Cards featuring the 4 user images -->
+<div class="mb-10 p-5 sm:p-6 rounded-2xl bg-secondary-fixed/40 border border-secondary/30 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm"><div class="flex items-center gap-3.5"><div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-xs"><span class="material-symbols-outlined text-2xl">local_dining</span></div><div><p class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">Cocinamos con amor y tradición cada día</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Descubre la auténtica variedad de guisados caseros y sabores representativos de Tecomán, Colima.</p></div></div><div class="px-4 py-2 rounded-xl bg-primary-container/10 text-primary font-label-md text-label-md font-bold flex items-center gap-2 shrink-0 border border-primary/25"><span class="material-symbols-outlined text-lg">verified</span><span class="">Gastronomía 100% Casera</span></div></div><div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+<!-- Card 1: Chuleta Ahumada (IMAGE_1) -->
+<article class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/60 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col group">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img alt="Chuleta Ahumada con Arroz y Vegetales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA3RK7yU2mYqDEpsvzYchlofIp8AM_0IJnowLUTJcqHPaDtgGSwqEbLekP3QX3jt70Hp_OBuEn62ClFfGV01Xg5lqn0KUrlY3z_vZMriwvVYlxZEcKTn3Y3d6Ah4mJgzHJbBz9iM3RexWEuwevKqsz1M8WEyFA8MMQ5ltjec4wC8ukYmK6n8maZ-zlc8S-VcGy1f-WbcroOL-yJ4kKvW5O2EE_oK21iRjCmbfqtafz_detctp5JQ">
+<div class="absolute top-3 left-3 bg-primary-container text-on-primary px-3 py-1 rounded-full text-xs font-label-sm font-bold shadow-xs">
+              Especial de la Casa
+            </div>
+<div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-bold px-3 py-1.5 rounded-xl shadow-sm border border-outline-variant/40 flex items-center gap-1"><span class="material-symbols-outlined text-xs text-primary">skillet</span><span class="">Hecho al Momento</span></div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">
+                Chuleta Ahumada al Fuego Lento
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">Esta es solo una muestra de nuestros platillos preparados al momento. Cada día cocinamos más variedades caseras y opciones de temporada.</p>
+<!-- Ingredients Pills -->
+<div class="flex flex-wrap gap-1.5 mt-4">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Arroz con Elote</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Calabacita</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Brócoli</span>
+</div>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/30 flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="restaurant_menu">restaurant_menu</span>Porción Completa Tradicional</span><span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-sm">check</span>Receta Familiar</span></div>
+</div>
+</article>
+<!-- Card 2: Pechuga Asada con Frijoles & Queso (IMAGE_2) -->
+<article class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/60 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col group">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img alt="Pechuga Asada al Carbón con Frijoles y Queso Fresco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMLSyWLeI3wxCMD0dVkIKOG6BirT4oHTSfmUPlFBqK2gTm35g2h5kOrDbWoUtO_WTKRVCiW4rDUNQooyhVGbtMryKdRm8emfVW7Ku2byetEr6H_zREKQz39soCZXhC6MzAf__DMkJo8R8VID3CfC9A-f6sslIlXmgTQVj4zyCPt68i994E4EFMbhqN53sAcVz2IP24B7CZgdaiNd7Bdo8fB1BYJqF_yKRNvxRoHTWA6IlTv3-mNw">
+<div class="absolute top-3 left-3 bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-label-sm font-bold shadow-xs">
+              Receta Campirana
+            </div>
+<div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-bold px-3 py-1.5 rounded-xl shadow-sm border border-outline-variant/40 flex items-center gap-1"><span class="material-symbols-outlined text-xs text-primary">favorite</span><span class="">Platillo Típico Casero</span></div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">
+                Pechuga Asada &amp; Frijolitos con Queso
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">Esta es solo una muestra de nuestros platillos preparados al momento. Cada día cocinamos más variedades caseras y opciones de temporada.</p>
+<!-- Ingredients Pills -->
+<div class="flex flex-wrap gap-1.5 mt-4">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Frijoles Refritos</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Queso Rancho</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Plátano Macho</span>
+</div>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/30 flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="thumb_up">thumb_up</span>Favorito Familiar</span><span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-sm">local_fire_department</span>Sazón de Rancho</span></div>
+</div>
+</article>
+<!-- Card 3: Pechuga a la Plancha con Pico de Gallo (IMAGE_4) -->
+<article class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/60 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col group">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img alt="Pechuga a la Plancha con Pico de Gallo y Chiles Serranos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEirBiSDpwUKwRTUf6KOqlbJtCBf1RTqwoIZIczVAw2g8aCtvb3WmgdQZ93ylMtLurShs6VkAVPoooIThoiwX2s0DOYl9GGQBnmKlgqHu4QFpkFWymxPQNYKUDED2w36HxM7DdSY-QvElAlrPJRPdc-Qx3fxPEl1loR3bx0WENCLgbG50p30k5u_r__4hTg0dzohA11u7bnjvBGxS86Vf7tWIPEvBk_BTOaKv7NMoVJmFPJL3z6A">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary px-3 py-1 rounded-full text-xs font-label-sm font-bold shadow-xs">
+              Sabor Fresco &amp; Ligero
+            </div>
+<div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-bold px-3 py-1.5 rounded-xl shadow-sm border border-outline-variant/40 flex items-center gap-1"><span class="material-symbols-outlined text-xs text-tertiary">eco</span><span class="">Cosecha Fresca</span></div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">
+                Pechuga con Pico de Gallo &amp; Chile Serrano
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">Esta es solo una muestra de nuestros platillos preparados al momento. Cada día cocinamos más variedades caseras y opciones de temporada.</p>
+<!-- Ingredients Pills -->
+<div class="flex flex-wrap gap-1.5 mt-4">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Pico de Gallo</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Chile Serrano</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Pimientos Rojos</span>
+</div>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/30 flex items-center justify-between"><span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="eco">eco</span>Platillo Balanceado</span><span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-sm">agriculture</span>Ingredientes del Valle</span></div>
+</div>
+</article>
+<!-- Card 4: Fruta Fresca de Temporada (IMAGE_3) -->
+</div>
+<!-- Complementary Banner: Custom salsas & tortillas -->
+<div class="mt-14 bg-gradient-to-r from-primary-container to-primary text-on-primary rounded-2xl p-8 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 rounded-2xl bg-surface/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl text-secondary-fixed" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold">¿Deseas Tortillas Hechas a Mano y Salsas de Molcajete?</h4>
+<p class="font-body-sm text-body-sm text-on-primary/90 mt-1">Todos nuestros pedidos incluyen tortillas de maíz recién salidas del comal y salsas roja y verde de la casa.</p>
+</div>
+</div>
+<div class="px-5 py-3 rounded-xl bg-surface/20 text-on-primary font-label-lg text-label-lg font-semibold flex items-center gap-2 shrink-0 border border-white/20"><span class="material-symbols-outlined text-secondary-fixed text-xl">verified</span><span class="">Auténtico acompañamiento colimense</span></div>
+</div>
+</div>
+</section>
+<!-- Interactive Experience Section: Sazón Selector & Testimonios -->
+<section class="py-16 bg-surface-container-low" id="menu-completo">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Interactive plate flavor explorer -->
+<div class="lg:col-span-6 bg-surface rounded-2xl p-8 border border-outline-variant/50 shadow-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Personaliza tu Experiencia</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">Arma tu Combinación Colimense</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 mb-6">
+            Selecciona la base de tu preferencia y descubre el balance de sabor que preparamos para ti.
+          </p>
+<!-- Interactive Plate Switcher Pills -->
+<div class="space-y-3 mb-6">
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-outline-variant hover:border-primary cursor-pointer transition-all bg-surface-container-lowest">
+<div class="flex items-center gap-3">
+<input checked="" class="w-5 h-5 text-primary focus:ring-secondary" name="dish-flavor" type="radio">
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Base de Cerdo Ahumado</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Chuleta sazonada + Arroz dorado con elote</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-primary font-bold">Clásico</span>
+</label>
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-outline-variant hover:border-primary cursor-pointer transition-all bg-surface-container-lowest">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 text-primary focus:ring-secondary" name="dish-flavor" type="radio">
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Pechuga Campirana</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Con frijoles machacados, queso de rancho y plátano</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-container font-bold">Tradicional</span>
+</label>
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-outline-variant hover:border-primary cursor-pointer transition-all bg-surface-container-lowest">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 text-primary focus:ring-secondary" name="dish-flavor" type="radio">
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Pechuga Fresca &amp; Picosa</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Acompañada con salsa mexicana fresca y rodajas de serrano</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-tertiary-fixed text-tertiary font-bold">Picante</span>
+</label>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex items-center justify-between"><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary" data-icon="agriculture">agriculture</span><span class="font-label-md text-label-md">Platillos preparados diariamente con ingredientes frescos del valle de Tecomán.</span></div></div>
+</div>
+<!-- Right: Atmosphere & Local Reviews in Tecomán -->
+<div class="lg:col-span-6 space-y-6">
+<div class="bg-surface rounded-2xl p-6 border border-outline-variant/40 shadow-xs flex items-start gap-4"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-2xl" data-icon="workspace_premium">workspace_premium</span><div><p class="font-label-lg text-label-lg font-bold text-on-surface">Orgullo Gastronómico Tecomense</p><p class="font-body-sm text-body-sm text-on-surface-variant">Disfruta de la riqueza, texturas y recetas de los sabores locales de Colima.</p></div></div></div>
+<div class="bg-surface rounded-2xl p-6 border border-outline-variant/40 shadow-xs flex items-start gap-4"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-2xl" data-icon="workspace_premium">workspace_premium</span><div><p class="font-label-lg text-label-lg font-bold text-on-surface">Orgullo Gastronómico Tecomense</p><p class="font-body-sm text-body-sm text-on-surface-variant">Disfruta de la riqueza, texturas y recetas de los sabores locales de Colima.</p></div></div></div>
+<!-- Feature Tag Bar -->
+<div class="p-6 rounded-2xl bg-surface-container-high/60 border border-outline-variant/40 flex items-center justify-between"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-2xl" data-icon="workspace_premium">workspace_premium</span><div><p class="font-label-lg text-label-lg font-bold text-on-surface">Orgullo Gastronómico Tecomense</p><p class="font-body-sm text-body-sm text-on-surface-variant">Disfruta de la riqueza, texturas y recetas de los sabores locales de Colima.</p></div></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: "Ven a Probarlos en Tecomán, Colima" (Location & Invitation) -->
+<section class="py-20 bg-surface" id="ubicacion">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Invitation Header -->
+<div class="text-center max-w-3xl mx-auto mb-16"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Sazón de Hogar &amp; Raíces</span><h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">El Verdadero Sabor Casero de Tecomán, Colima</h2><p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">Una muestra viva de la tradición culinaria, sazón de hogar y recetas que enorgullecen al valle costero de Tecomán.</p></div>
+<!-- Two-Column Location Card: Info & Stylized Visual Map -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 bg-surface-container-low rounded-3xl p-6 sm:p-10 border border-outline-variant/60 shadow-sm">
+<!-- Left: Logistics & Contact -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-8"><div><h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-6">Tradición y Origen Culinario</h3><div class="space-y-6"><div class="flex items-start gap-4"><div class="w-11 h-11 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-xs"><span class="material-symbols-outlined text-xl" data-icon="kitchen">kitchen</span></div><div><p class="font-label-lg text-label-lg font-bold text-on-surface">Cocina Tradicional Alondra</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 font-semibold text-primary">Tecomán, Colima, México</p></div></div><div class="flex items-start gap-4"><div class="w-11 h-11 rounded-xl bg-secondary-fixed text-on-secondary-container flex items-center justify-center shrink-0 shadow-xs"><span class="material-symbols-outlined text-xl" data-icon="schedule">schedule</span></div><div><p class="font-label-lg text-label-lg font-bold text-on-surface">Preparación Diaria</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Lunes a Domingo: 8:00 AM – 6:00 PM</p><p class="font-label-sm text-label-sm text-tertiary font-semibold">Comida recién hecha desde temprana hora</p></div></div><div class="flex items-start gap-4"><div class="w-11 h-11 rounded-xl bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0 shadow-xs"><span class="material-symbols-outlined text-xl" data-icon="nature_people">nature_people</span></div><div><p class="font-label-lg text-label-lg font-bold text-on-surface">Identidad y Comunidad</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Platillos elaborados con ingredientes del valle:</p><span class="font-headline-sm text-headline-sm font-bold text-primary block mt-0.5">Orgullo de Nuestra Tierra</span></div></div></div></div><div class="pt-6 border-t border-outline-variant/30 flex flex-wrap gap-3"><div class="px-4 py-2 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center gap-2"><span class="material-symbols-outlined text-base text-primary">verified</span><span class="">Sazón Casero Familiar</span></div><div class="px-4 py-2 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center gap-2"><span class="material-symbols-outlined text-base text-secondary">eco</span><span class="">Ingredientes Locales</span></div></div></div>
+<!-- Right: Map Card & Atmosphere Visual -->
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div class="relative w-full h-[320px] sm:h-[380px] rounded-2xl overflow-hidden border border-outline-variant/80 shadow-inner group">
+<!-- Map Decorative Visual Simulation -->
+<div class="absolute inset-0 bg-[#EFE6DA] flex items-center justify-center">
+<!-- Stylized map grid patterns -->
+<div class="w-full h-full opacity-30 bg-[radial-gradient(#932c0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Tecomán Road Grid Mockup -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-4/5 h-1 bg-[#D3C1AE] rotate-12 absolute"></div>
+<div class="w-4/5 h-1.5 bg-[#FFFFFF] -rotate-45 absolute"></div>
+<div class="w-3/5 h-2 bg-[#F5EBDD] rotate-45 absolute"></div>
+</div>
+<!-- Pin Center Marker -->
+<div class="relative z-10 flex flex-col items-center animate-bounce">
+<div class="p-3.5 rounded-full bg-primary text-on-primary shadow-xl ring-4 ring-primary/20">
+<span class="material-symbols-outlined text-3xl" data-icon="restaurant" data-weight="fill" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<div class="mt-2 bg-surface text-on-surface font-bold text-xs font-label-sm px-3 py-1 rounded-full shadow-md border border-outline-variant">
+                  Alondra Comida Mexicana
+                </div>
+</div>
+<!-- Top Left Map Badge -->
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm px-3.5 py-1.5 rounded-xl border border-outline-variant text-xs font-label-md font-semibold text-on-surface shadow-xs flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="">Abierto Hoy en Tecomán</span>
+</div>
+<!-- Bottom Right Location Indicator with data-location -->
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/95 backdrop-blur-sm px-4 py-2 rounded-xl border border-outline-variant shadow-sm text-right" data-location="Tecomán, Colima">
+<p class="font-label-sm text-label-sm text-primary font-bold">Valle de Tecomán</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Colima, México</p>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Note -->
+<div class="mt-4 p-4 rounded-xl bg-surface border border-outline-variant/40 flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-2xl" data-icon="restaurant">restaurant</span><p class="font-body-sm text-body-sm text-on-surface-variant">Comida 100% casera elaborada con esmero artesanal. Un homenaje culinario a los hogares y campos de Tecomán, Colima.</p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reservation & Orders CTA Banner -->
+<section class="py-16 bg-gradient-to-br from-surface via-surface-container to-surface-container-high border-t border-outline-variant/30" id="reservaciones">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center"><div class="w-16 h-16 mx-auto rounded-full bg-primary/10 text-primary flex items-center justify-center mb-6"><span class="material-symbols-outlined text-3xl" data-icon="soup_kitchen">soup_kitchen</span></div><h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Celebramos el Sabor Auténtico de Tecomán, Colima</h2><p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-3">Recetas caseras preparadas con la calidez, sazón y orgullo de nuestra tierra colimense.</p><div class="mt-8 flex flex-wrap items-center justify-center gap-4"><a class="px-8 py-4 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-lg hover:bg-primary transition-all duration-200 active:scale-95 flex items-center gap-2" href="#historia"><span class="material-symbols-outlined text-xl" data-icon="menu_book">menu_book</span><span class="">Conocer Nuestra Historia</span></a><a class="px-8 py-4 rounded-xl bg-surface text-primary border border-outline-variant font-label-lg text-label-lg hover:bg-surface-container-highest transition-all duration-200 flex items-center gap-2" href="#especialidades"><span class="material-symbols-outlined text-xl" data-icon="restaurant_menu">restaurant_menu</span><span class="">Ver Más Platillos</span></a></div></div>
+</section>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline/20 w-full mt-auto">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Brand & Origin -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">
+          Alondra Comida Mexicana
+        </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-inverse-on-surface mt-1">
+          Tradición y sazón de Tecomán, Colima.
+        </p>
+</div>
+<!-- Footer Navigation Links -->
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2"><a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#especialidades">Especialidades</a><a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#especialidades">Galería de Platillos</a><a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#historia">Nuestra Historia</a><a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#ubicacion">Tradición Colimense</a><a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#ubicacion">Contacto y Ubicación</a></div>
+<!-- Copyright text from JSON -->
+<div class="text-center md:text-right">
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-inverse-on-surface">
+          © 2024 Alondra Comida Mexicana. Tradición y sazón de Tecomán, Colima. Todos los derechos reservados.
+        </p>
+</div>
+</div>
+</footer>
+<!-- Interactive JavaScript for Plate Rotation Controls -->
+<script>
+    const heroImage = document.getElementById('rotatable-hero-image');
+    const toggleSpinBtn = document.getElementById('toggle-spin-btn');
+    const spinIcon = document.getElementById('spin-icon');
+    let isSpinning = true;
+
+    // Toggle spin state
+    if (toggleSpinBtn && heroImage) {
+      toggleSpinBtn.addEventListener('click', () => {
+        isSpinning = !isSpinning;
+        if (isSpinning) {
+          heroImage.classList.remove('paused-spin');
+          spinIcon.textContent = 'pause';
+        } else {
+          heroImage.classList.add('paused-spin');
+          spinIcon.textContent = 'play_arrow';
+        }
+      });
+    }
+
+    // Switch hero image preview dynamically
+    function setHeroPlate(index, imgUrl, title) {
+      if (!heroImage) return;
+      heroImage.style.opacity = '0';
+      heroImage.style.transform = 'scale(0.85) rotate(15deg)';
+      
+      setTimeout(() => {
+        heroImage.src = imgUrl;
+        heroImage.alt = title;
+        heroImage.style.opacity = '1';
+        heroImage.style.transform = 'scale(1.05) rotate(0deg)';
+      }, 250);
+
+      // Update button active styling
+      document.querySelectorAll('.hero-selector-btn').forEach(btn => {
+        if (btn.getAttribute('data-index') == index) {
+          btn.className = "hero-selector-btn px-2.5 py-1 rounded-lg text-xs font-label-md bg-primary-container text-on-primary font-semibold transition-all";
+        } else {
+          btn.className = "hero-selector-btn px-2.5 py-1 rounded-lg text-xs font-label-md text-on-surface-variant hover:bg-surface-container-high transition-all";
+        }
+      });
+    }
+  </script>
+
+
+</body></html>
